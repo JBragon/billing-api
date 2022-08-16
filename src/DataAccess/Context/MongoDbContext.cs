@@ -1,13 +1,7 @@
 ﻿using DataAccess.Config;
 using Models.Business;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Authentication;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Xsl;
 
 namespace DataAccess.Context
 {
@@ -18,7 +12,7 @@ namespace DataAccess.Context
         public MongoDbContext(IBillingDatabaseSettings settings)
         {
             var client = GetClient(settings.ConnectionString);
-            var database = client.GetDatabase(settings.DatbaseName);
+            var database = client.GetDatabase(settings.DatabaseName);
 
             Billings = database.GetCollection<Billing>(settings.CollectionName);
         }
