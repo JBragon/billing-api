@@ -29,7 +29,7 @@ namespace Billing.Unit.Test
 
             var result = await _billingService.Object.Create(billing);
 
-            Assert.True(result is not null);
+            Assert.NotNull(result);
             Assert.IsType<Models.Business.Billing>(result);
         }
 
@@ -45,7 +45,7 @@ namespace Billing.Unit.Test
 
             var result = await _billingService.Object.Create(billing);
 
-            Assert.True(result.Id is null);
+            Assert.Null(result.Id);
             Assert.IsType<Models.Business.Billing>(result);
         }
 

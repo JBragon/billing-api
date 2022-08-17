@@ -25,8 +25,7 @@ namespace Billing.Integration.Test
             // Act
             var response = await client.GetAsync($"/api/Billing");
 
-            var data = await response.Content.ReadAsStringAsync();
-            var billings = JsonConvert.DeserializeObject<List<Models.Business.Billing>>(data);
+            var billings = await response.ReadContentAs<List<Models.Business.Billing>>();
 
             // Assert
             response.EnsureSuccessStatusCode(); // Status Code 200-299
@@ -59,8 +58,7 @@ namespace Billing.Integration.Test
             // Act
             var response = await client.PostAsJsonAsync($"/api/Billing", post);
 
-            var data = await response.Content.ReadAsStringAsync();
-            var billingRegistered = JsonConvert.DeserializeObject<Models.Business.Billing>(data);
+            var billingRegistered = await response.ReadContentAs<Models.Business.Billing>();
 
             // Assert
             response.EnsureSuccessStatusCode(); // Status Code 200-299

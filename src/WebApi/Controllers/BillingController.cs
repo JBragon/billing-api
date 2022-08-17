@@ -18,7 +18,7 @@ namespace WebApi.Controllers
             _billingService = billingService;
         }
 
-        [HttpGet()]
+        [HttpGet]
         public IActionResult Get([FromQuery] BillingFilter billingFilter)
         {
             return Ok( _billingService.Get(billingFilter));
