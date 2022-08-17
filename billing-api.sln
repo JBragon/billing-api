@@ -7,22 +7,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F5CD0B61-1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{BA26160B-82A6-44DF-AD6A-F7FA73E29CA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "src\WebApi\WebApi.csproj", "{9A53A142-DF8D-4188-AD4B-62068FD971BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "src\WebApi\WebApi.csproj", "{9A53A142-DF8D-4188-AD4B-62068FD971BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "src\Business\Business.csproj", "{29219798-4FC4-4768-AEBE-563C2E1D8ACC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "src\Business\Business.csproj", "{29219798-4FC4-4768-AEBE-563C2E1D8ACC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "src\DataAccess\DataAccess.csproj", "{53F8567D-1AAA-4C22-A303-16286E2377AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "src\DataAccess\DataAccess.csproj", "{53F8567D-1AAA-4C22-A303-16286E2377AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "src\Models\Models.csproj", "{128F5343-3EB2-4027-B623-216D6D817E4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "src\Models\Models.csproj", "{128F5343-3EB2-4027-B623-216D6D817E4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "src\Resources\Resources.csproj", "{7201DDD2-B7BA-42F8-9EAF-8059B0DDDB0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resources", "src\Resources\Resources.csproj", "{7201DDD2-B7BA-42F8-9EAF-8059B0DDDB0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billing.Unit.Test", "src\Billing.Unit.Test\Billing.Unit.Test.csproj", "{63C826C7-3708-449E-9E57-3DF24890C6C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Billing.Unit.Test", "src\Billing.Unit.Test\Billing.Unit.Test.csproj", "{63C826C7-3708-449E-9E57-3DF24890C6C0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1E119DE6-6CE8-44D9-B4FE-001B32247CF2}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billing.Integration.Test", "Billing.Integration.Test\Billing.Integration.Test.csproj", "{E4FB4178-E14D-4B16-8902-59236E6C65B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +56,10 @@ Global
 		{63C826C7-3708-449E-9E57-3DF24890C6C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63C826C7-3708-449E-9E57-3DF24890C6C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63C826C7-3708-449E-9E57-3DF24890C6C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4FB4178-E14D-4B16-8902-59236E6C65B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4FB4178-E14D-4B16-8902-59236E6C65B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4FB4178-E14D-4B16-8902-59236E6C65B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4FB4178-E14D-4B16-8902-59236E6C65B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{128F5343-3EB2-4027-B623-216D6D817E4A} = {F5CD0B61-1DB8-4DA0-9EEF-F19BCF18C179}
 		{7201DDD2-B7BA-42F8-9EAF-8059B0DDDB0D} = {F5CD0B61-1DB8-4DA0-9EEF-F19BCF18C179}
 		{63C826C7-3708-449E-9E57-3DF24890C6C0} = {BA26160B-82A6-44DF-AD6A-F7FA73E29CA2}
+		{E4FB4178-E14D-4B16-8902-59236E6C65B7} = {BA26160B-82A6-44DF-AD6A-F7FA73E29CA2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6BB3AAB8-9633-4C1B-9CF4-76A88F47E0D1}
