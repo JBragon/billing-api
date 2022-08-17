@@ -24,7 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billing.Integration.Test", "Billing.Integration.Test\Billing.Integration.Test.csproj", "{E4FB4178-E14D-4B16-8902-59236E6C65B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Billing.Integration.Test", "src\Billing.Integration.Test\Billing.Integration.Test.csproj", "{E4FB4178-E14D-4B16-8902-59236E6C65B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
